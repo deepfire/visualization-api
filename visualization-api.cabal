@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c044d30e629508602c1652a8a4f7ca49ecd000061f7213143739ee94ef36c31f
+
+name:           visualization-api
+version:        0.2.0.0
+synopsis:       Visualization API
+description:    Please see README.md
+homepage:       https://github.com/luna/visualization-api#readme
+author:         New Byte Order
+maintainer:     contact@luna-lang.org
+copyright:      2016 New Byte Order
+build-type:     Simple
+
+library
+  exposed-modules:
+      Graphics.API
+      Graphics.Instances
+  other-modules:
+      Paths_visualization_api
+  hs-source-dirs:
+      src
+  default-extensions: DeriveAnyClass DeriveGeneric FlexibleInstances MultiParamTypeClasses TemplateHaskell
+  build-depends:
+      aeson
+    , base >=4.7 && <5
+    , binary
+    , deepseq
+    , lens
+    , matrix
+    , text
+  default-language: Haskell2010
